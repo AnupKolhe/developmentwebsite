@@ -1,0 +1,20 @@
+# Node
+node_modules/
+.env
+.env.*
+
+# React
+frontend/dist/
+
+# Flutter
+flutter/.dart_tool/
+flutter/build/
+flutter/.flutter-plugins
+flutter/.flutter-plugins-dependencies
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store

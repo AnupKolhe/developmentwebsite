@@ -1,0 +1,89 @@
+Flutter Experience
+       │
+       ▼
+   Node.js
+       │
+       ├──────► PostgreSQL / SQL
+       │
+       ▼
+   REST API
+       │
+       ▼
+   ReactJS
+       │
+       ▼
+Full Stack Project
+
+
+dev/
+│
+├── frontend/                         # ReactJS Web App
+│   ├── public/
+│   │   └── assets/
+│   │
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── layouts/
+│   │   ├── routes/
+│   │   ├── services/                # API calls
+│   │   ├── hooks/
+│   │   ├── context/
+│   │   ├── utils/
+│   │   ├── constants/
+│   │   ├── App.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
+│   │
+│   ├── .env
+│   ├── package.json
+│   └── vite.config.js
+│
+├── backend/                          # Node.js Backend
+│   ├── src/
+│   │   ├── config/                  # DB & environment config
+│   │   ├── controllers/             # Request handling
+│   │   ├── routes/                  # API routes
+│   │   ├── models/                  # PostgreSQL models/queries
+│   │   ├── services/                # Business logic
+│   │   ├── middleware/
+│   │   ├── validators/
+│   │   ├── utils/
+│   │   ├── constants/
+│   │   ├── app.js
+│   │   └── server.js
+│   │
+│   ├── migrations/                  # PostgreSQL migrations
+│   ├── seeders/                     # Initial/test data
+│   ├── tests/
+│   ├── .env
+│   └── package.json
+│
+├── flutter/                          # Flutter Mobile App
+│   ├── lib/
+│   │   ├── core/
+│   │   ├── models/
+│   │   ├── services/                # Backend API calls
+│   │   ├── repositories/
+│   │   ├── providers/
+│   │   ├── screens/
+│   │   ├── widgets/
+│   │   ├── routes/
+│   │   ├── utils/
+│   │   └── main.dart
+│   │
+│   ├── assets/
+│   │   ├── images/
+│   │   └── icons/
+│   │
+│   ├── test/
+│   └── pubspec.yaml
+│
+├── database/                         # PostgreSQL
+│   ├── migrations/
+│   ├── seeders/
+│   └── README.md
+│
+├── .gitignore
+└── README.md
