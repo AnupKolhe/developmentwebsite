@@ -1,0 +1,182 @@
+database/
+│
+├── users
+│   ├── id
+│   ├── name
+│   ├── email
+│   ├── password_hash
+│   ├── role_id
+│   ├── is_active
+│   ├── created_at
+│   └── updated_at
+│
+├── roles
+│   ├── id
+│   ├── name
+│   └── permissions
+│
+├── members
+│   ├── id
+│   ├── name
+│   ├── email
+│   ├── phone
+│   ├── address
+│   ├── photo
+│   ├── membership_type
+│   ├── membership_start_date
+│   ├── membership_end_date
+│   ├── status
+│   ├── created_at
+│   └── updated_at
+│
+├── meetings
+│   ├── id
+│   ├── title
+│   ├── meeting_type
+│   ├── description
+│   ├── meeting_date
+│   ├── start_time
+│   ├── end_time
+│   ├── location
+│   ├── address
+│   ├── contact_person
+│   ├── contact_phone
+│   ├── created_at
+│   └── updated_at
+│
+├── meeting_images
+│   ├── id
+│   ├── meeting_id
+│   ├── image_url
+│   └── created_at
+│
+├── meeting_guests
+│   ├── id
+│   ├── meeting_id
+│   ├── name
+│   ├── designation
+│   ├── photo
+│   └── created_at
+│
+├── meeting_awards
+│   ├── id
+│   ├── meeting_id
+│   ├── title
+│   ├── description
+│   ├── recipient_name
+│   ├── photo
+│   └── created_at
+│
+├── meeting_invitations
+│   ├── id
+│   ├── meeting_id
+│   ├── member_id
+│   ├── invitation_status
+│   └── created_at
+│
+├── donations
+│   ├── id
+│   ├── donor_name
+│   ├── member_id
+│   ├── amount
+│   ├── donation_type
+│   ├── payment_method
+│   ├── payment_reference
+│   ├── donation_date
+│   ├── receipt_number
+│   └── created_at
+│
+├── memberships
+│   ├── id
+│   ├── member_id
+│   ├── membership_type
+│   ├── amount
+│   ├── start_date
+│   ├── end_date
+│   ├── payment_status
+│   ├── payment_reference
+│   └── created_at
+│
+├── board_members
+│   ├── id
+│   ├── member_id
+│   ├── position
+│   ├── photo
+│   ├── start_date
+│   ├── end_date
+│   ├── is_active
+│   └── created_at
+│
+├── documents
+│   ├── id
+│   ├── title
+│   ├── document_type
+│   ├── description
+│   ├── file_url
+│   ├── uploaded_by
+│   ├── uploaded_at
+│   └── updated_at
+│
+├── document_files
+│   ├── id
+│   ├── document_id
+│   ├── file_name
+│   ├── file_url
+│   ├── file_type
+│   └── uploaded_at
+│
+└── audit_logs
+    ├── id
+    ├── user_id
+    ├── action
+    ├── table_name
+    ├── record_id
+    ├── created_at
+    └── details
+
+
+                    ┌──────────────┐
+                    │    USERS     │
+                    └──────┬───────┘
+                           │
+                    ┌──────▼───────┐
+                    │    ROLES     │
+                    └──────────────┘
+
+
+┌──────────────┐
+│   MEMBERS    │
+└──────┬───────┘
+       │
+       ├──────────────► MEMBERSHIPS
+       │
+       ├──────────────► DONATIONS
+       │
+       ├──────────────► BOARD_MEMBERS
+       │
+       └──────────────► MEETING_INVITATIONS
+
+
+┌──────────────┐
+│   MEETINGS   │
+└──────┬───────┘
+       │
+       ├──────────────► MEETING_IMAGES
+       │
+       ├──────────────► MEETING_GUESTS
+       │
+       ├──────────────► MEETING_AWARDS
+       │
+       └──────────────► MEETING_INVITATIONS
+
+
+┌──────────────┐
+│  DOCUMENTS   │
+└──────┬───────┘
+       │
+       └──────────────► DOCUMENT_FILES
+
+
+┌──────────────┐
+│ AUDIT_LOGS   │
+└──────────────┘

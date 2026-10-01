@@ -1,3 +1,17 @@
+A. Initial Point
+Work flow will be
+Features
+    ↓
+Database Schema
+    ↓
+API Design
+    ↓
+Backend Development
+    ↓
+Frontend
+    ↓
+Deployment
+
 Flutter Experience
        │
        ▼

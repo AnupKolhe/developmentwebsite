@@ -1,0 +1,14 @@
+Features like 
+1 Small meeting 3-5 in years or same months in which it will have location , address, contact person.
+--> Pic.
+2 Large Community meeting.
+--> Pic, Award, Guests, Invation list.
+3 Donation.
+--> Open Donation.
+--> Member list, Paid Member annullay or permant.
+4 Board Member.
+--> Board Member List Pic.
+5 Community Document.
+--> Registration
+--> Multiple paper Work.
+6 Admin section to control this thing.
